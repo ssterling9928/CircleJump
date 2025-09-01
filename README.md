@@ -65,8 +65,18 @@ This project was built using the following technologies:
 
 ---
 
+## Project Documentation
+
+- Project Naming Conventions: [Naming Conventions](Docs/NamingConventions.md)
+
+- Game Design Document and Build Plan: [Game Design Document](Docs/CircleJump_GDD.md)
+
+---
+
 ## 📬 Contact
 
 Stephen Sterling - [stephen@sterling-dev.com](mailto:stephen@sterling-dev.com)
 
 Project Link: [https://github.com/ssterling9928/CircleJump](https://github.com/ssterling9928/CircleJump)
+
+
