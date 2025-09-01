@@ -97,7 +97,7 @@ Players control a bouncing ball constrained to the circumference of a transparen
 
 ### **Phase 1 — Foundations**
 
-1. Create new Unity 6.2 URP project.
+1. Create new Unity 6.2 URP project.  
 2. Set up **layers** (`Player`, `Blocks`, `Hazards`, `Ground`).
 3. Implement cylindrical coordinate system for player movement (`theta`, `y`).
 4. Create **ball prefab** with Rigidbody + constraints.
