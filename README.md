@@ -65,7 +65,7 @@ This project was built using the following technologies:
 
 ---
 
-## Project Documentation
+## 📖 Project Documentation
 
 - Project Naming Conventions: [Naming Conventions](Docs/NamingConventions.md)
 
@@ -81,6 +81,6 @@ Project Link: [https://github.com/ssterling9928/CircleJump](https://github.com/s
 
 ---
 
-## License
+## 📝 License
 This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
 
