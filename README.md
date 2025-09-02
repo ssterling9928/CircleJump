@@ -79,4 +79,8 @@ Stephen Sterling - [stephen@sterling-dev.com](mailto:stephen@sterling-dev.com)
 
 Project Link: [https://github.com/ssterling9928/CircleJump](https://github.com/ssterling9928/CircleJump)
 
+---
+
+## License
+This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
 
