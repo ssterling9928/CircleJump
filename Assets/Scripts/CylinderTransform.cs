@@ -11,7 +11,7 @@ public class CylinderTransform : MonoBehaviour
 {
 
     // Properties
-    [SerializeField] private Transform cylinderRoot; // Transform of the World Cylinder
+    [SerializeField] private Transform meshTransform; // Transform of the World Cylinder
     
 
     [Tooltip("Radians around the tube (0..2π).")]
@@ -30,7 +30,7 @@ public class CylinderTransform : MonoBehaviour
             float x = Mathf.Cos(theta) * _radius;
             float z = Mathf.Sin(theta) * _radius;
             Vector3 localPosition = new Vector3(x, y, z);
-            return cylinderRoot.localPosition + cylinderRoot.rotation * localPosition;
+            return meshTransform.localPosition + meshTransform.rotation * localPosition;
         }
     }
     public Quaternion WorldRotation
@@ -40,7 +40,7 @@ public class CylinderTransform : MonoBehaviour
             float x = Mathf.Cos(theta);
             float z = Mathf.Sin(theta);
             Quaternion outwards = Quaternion.LookRotation(new Vector3(x, 0, z), Vector3.up);
-            return cylinderRoot.rotation * outwards;
+            return meshTransform.rotation * outwards;
         }
     }
 
@@ -53,9 +53,9 @@ public class CylinderTransform : MonoBehaviour
     private void UpdateLocationOnCylinder()
     {
         // Update both in edit mode and play mode
-        if (!cylinderRoot) return;
+        if (!meshTransform) return;
 
-        _radius = cylinderRoot.localScale.x / 2f; // Assuming uniform scale and cylinder aligned with Y axis
+        _radius = meshTransform.localScale.x / 2f; // Assuming uniform scale and cylinder aligned with Y axis
 
         if (_isOrientOutward)
             transform.SetPositionAndRotation(WorldPosition, WorldRotation);
